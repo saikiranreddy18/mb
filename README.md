@@ -278,3 +278,4 @@ For issues or questions, contact the development team.
 **Built with ❤️ for MUMMAS BITE**
 
 *Made with a mother's love.*
+# Deployed to GitHub Pages

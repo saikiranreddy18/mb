@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --color-primary: #1B4D2E;
+  --color-primary-light: #2D6A42;
+  --color-secondary: #F5F1EA;
+  --color-earth: #8B6F47;
+  --color-accent: #C9A876;
+  --color-white: #FFFFFF;
+  --color-off-white: #FAF7F2;
+  --color-text: #1A1A1A;
+  --color-text-light: #6B6B6B;
+  --color-border: #E8E0D5;
+
+  --font-primary: 'Sora', 'Manrope', sans-serif;
+  --font-editorial: 'DM Serif Display', 'Instrument Serif', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-off-white);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-editorial);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+button {
+  font-family: var(--font-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+input, textarea, select {
+  font-family: var(--font-primary);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-earth);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

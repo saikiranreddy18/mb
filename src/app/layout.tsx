@@ -1,13 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SmoothScroll } from '@/components/providers/SmoothScroll';
 import '@/globals.css';
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: 'MUMMAS BITE | Made with a Mother\'s Love',
   description: 'Simple ingredients. Honest nourishment. Dry fruit bars made with a mother\'s care.',
-  viewport: 'width=device-width, initial-scale=1',
   metadataBase: new URL('https://mummasbite.com'),
   openGraph: {
     title: 'MUMMAS BITE | Made with a Mother\'s Love',

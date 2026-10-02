@@ -34,8 +34,8 @@ export function useParallax(speed: number = 0.5) {
     if (!elementRef.current) return;
 
     gsap.to(elementRef.current, {
-      y: (i: number, target: HTMLElement) => {
-        return ScrollTrigger.getOffset(target) * speed;
+      y: (_: number, target: HTMLElement) => {
+        return gsap.getProperty(target, 'offsetTop') as number * speed;
       },
       scrollTrigger: {
         trigger: elementRef.current,
